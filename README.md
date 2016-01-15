@@ -28,3 +28,9 @@ PushUtils.push("天气状况播报", content, ""); 第三个参数写要发送�
 连同依赖的Jsoup包一同打成jar包 pm2.5-monitor-1.0-SNAPSHOT-jar-with-dependencies.jar
 服务器端配置crontab 定时任务每天早上定时执行`30 6 * * * sh /opt/linjiantest/monitor-pm2.5.sh > /dev/null 2>&1`
 ，这样可以每天查看邮件就知道今天的空气状况了，我是这么使用的..
+
+### monitor-pm2.5.sh
+```
+#!/bin/bash
+/usr/local/jdk1.7.0_71/bin/java -jar /opt/linjiantest/pm2.5-monitor.jar
+```
