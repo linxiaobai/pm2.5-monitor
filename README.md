@@ -1,5 +1,5 @@
 # pm2.5-monitor
-send the pm infomation to your email
+send the pm information to your email
 
 主要数据来源： pm2.5.com
 目前监测天气的地址： 北京 天津（可以类似的加以修改，监测其他地区）
@@ -7,11 +7,11 @@ send the pm infomation to your email
 你需要做以下修改：
 1.配置发送邮件的用户名和密码（仅限126邮箱）
 
-Constants
-  /*发送人邮箱*/
-    public static final String MAIL_FROM_USERNAME = "";
-    /*发送人密码*/
-    public static final String MAIL_FROM_PASSWORD = "";
+Constants.class
+  
+public static final String MAIL_FROM_USERNAME = "";  /*发送人邮箱*/
+ 
+public static final String MAIL_FROM_PASSWORD = "";  /*发送人密码*/
 
 2.在Main.class类里面，你需要给定邮件发送到的邮箱，目前仅限126邮箱，因为服务器用的是126的邮件服务器
 
